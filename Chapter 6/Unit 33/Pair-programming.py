@@ -2,7 +2,7 @@ def is_valid_move(maze, row, col, N):
     return row >= 0 and col >= 0 and row < N and col < N and maze[row][col] == 1
 
 
-def solve(maze, N):
+def maze_route(maze, N):
     solution = [[0] * N for _ in range(N)]
     directions = [(1, 0), (-1, 0), (0, -1), (0, 1)]
     if not dfs_helper(maze, 0, 0, solution, N, directions):
@@ -40,4 +40,4 @@ maze = [
     [0, 0, 0, 0]
 ]
 
-solve(maze, N)
+maze_route(maze, N)
