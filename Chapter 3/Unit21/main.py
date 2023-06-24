@@ -4,9 +4,9 @@ class Student:
     def __init__(self, name, student_id, eng_quiz, math_quiz, science_quiz):
         self.__name = name
         self.__student_id = student_id
-        # self.__eng_quiz = eng_quiz
-        # self.__math_quiz = math_quiz
-        # self.__science_quiz = science_quiz
+        self.__eng_quiz = eng_quiz
+        self.__math_quiz = math_quiz
+        self.__science_quiz = science_quiz
 
     def __str__(self):
         return 'Name : {0}, ID : {1}'.format(self.__name, self.__student_id)
