@@ -14,14 +14,14 @@ class Stack:
 
 def html_matched(text):
     S = Stack()
-    
+
     start = text.find("<")
 
     while start != -1:
         end = text.find(">", start + 1)
         if end == -1:
             return False
-        tag = text[start +1 :end]
+        tag = text[start + 1:end]
 
         if not tag.startswith('/'):
             S.push(tag)
