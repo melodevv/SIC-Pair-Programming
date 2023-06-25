@@ -12,11 +12,12 @@ for x in range(360):
     t.left(80)
     t.speed(50)
 t.penup()
-for x in range(36):
-    t.forward(250)
-    t.pendown()
-    t.circle(5)
-    t.penup()
-    t.backward(250)
-    t.right(10)
-    t.pencolor(colors[x % 6])
+for i in range(36):
+    aiden.forward(280)
+    aiden.pendown()
+    aiden.color(colors[i % 6])
+    aiden.circle(5)
+    aiden.penup()
+    aiden.backward(280)
+    aiden.right(10)
+
