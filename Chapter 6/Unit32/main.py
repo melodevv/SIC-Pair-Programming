@@ -1,6 +1,5 @@
-
 def maximum_subarray(arr):
-    max_sum = float('-inf') # set to negative infinity
+    max_sum = float('-inf')  # set to negative infinity
     current_sum = 0
     start_index = 0
     end_index = 0
@@ -18,12 +17,9 @@ def maximum_subarray(arr):
             current_sum = 0
             current_start_index = i + 1
 
-    return arr[start_index:end_index+1]
+    return sum(arr[start_index:end_index + 1])
 
 
-S = [-2, 1, -3, 4, -1, 2, -5, 4]
+S = [-2, 1, -3, 4, -1, 2, 1, -5, 4]
 M = maximum_subarray(S)
 print(M)
-
-
-
