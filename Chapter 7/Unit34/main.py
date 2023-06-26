@@ -5,12 +5,13 @@ turtle.bgcolor('black')
 
 t = turtle.Pen()
 t.color('white')
-for x in range(360):
+for x in range(320):
     t.pencolor(colors[x % 6])
     t.width(x//100+1)
     t.forward(x)
     t.left(80)
     t.speed(50)
+t.pendown()
 t.penup()
 for i in range(36):
     aiden.forward(280)
