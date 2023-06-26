@@ -36,6 +36,9 @@ def find_kth_largest_partition(num, k):
 nums = [3, 5, 2, 9, 10]
 k = 3
 
+print("Nums :", nums)
+print("K :", k)
+
 kth_largest_sort = find_kth_largest_sort(nums, k)
 kth_largest_partition = find_kth_largest_partition(nums, k)
 
